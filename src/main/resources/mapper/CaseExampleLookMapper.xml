@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sixsixsix.mapper.RequestMapper">
+
+    <select id="state" resultType="com.sixsixsix.model.State">
+        SELECT
+        	a.*
+        FROM(
+            SELECT
+        	    url,
+        	    COUNT( * ) AS `count`,
+        	    AVG( use_time ) AS avgTime,
+        	    date( gmt_create ) AS localDate
+            FROM `sun_monitor_request`
+            GROUP BY url, date( gmt_create ) ) AS a
+        ORDER BY
+        	a.localDate DESC,a.count DESC
+    </select>
+
+</mapper>

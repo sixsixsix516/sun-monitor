@@ -1,4 +1,4 @@
-package com.sixsixsix516.model;
+package com.sixsixsix.model;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -25,7 +25,7 @@ public class Request {
     /**
      * 使用掉的时间(单位毫秒)
      */
-    private Integer useTime;
+    private Long useTime;
 
     /**
      * 请求参数
@@ -35,7 +35,7 @@ public class Request {
     /**
      * 接口返回值
      */
-    private String returnValue;
+    private Object returnValue;
 
     /**
      * 请求时间

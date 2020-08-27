@@ -1,12 +1,15 @@
 mybatis-plus:
   mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: com.sixsixsix516.model
+  type-aliases-package: com.sixsixsix.model
   configuration:
     map-underscore-to-camel-case: true
 
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql:///sun?autoReconnect=true&useUnicode=true&characterEncoding=UTF8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT%2B8
-    username: root
-    password: 1111
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql:///sun?autoReconnect=true&useUnicode=true&characterEncoding=UTF8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT%2B8
+#    username: root
+#    password: 1111
+
+
+#interface-package: com.sixsixsix516.controller
