@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ConfigurableAdvisorConfig {
 
-    @Value("${interface-package}")
+    @Value("${sun-mirror.scanPackage}")
     private String interfacePackage;
 
     @Bean

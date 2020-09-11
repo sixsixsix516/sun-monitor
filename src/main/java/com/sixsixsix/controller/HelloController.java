@@ -14,8 +14,6 @@ import java.util.List;
 @RestController
 public class HelloController {
 
-
-
     @GetMapping("/state")
     public List<State> state(){
         return requestMapper.state();
